@@ -1,10 +1,11 @@
+// types.ts
 import { nat64, Opt, Principal, Record, text } from 'azle';
 
 // Define License ID and License Record
 export const LicenseId = text;
 
 export const License = Record({
-    id: LicenseId,
+    licenseId: LicenseId, // Renamed id to licenseId for clarity
     name: text,
     type: text,
     principal: Principal,
